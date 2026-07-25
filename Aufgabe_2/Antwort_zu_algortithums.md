@@ -1,0 +1,4 @@
+FRAGE:Welcher Algorithmus ist am langsamsten und wie erklären Sie sich das?
+
+
+Bubble Sort ist mit Abstand am langsamsten. Grund ist die unterschiedliche Zeitkomplexität: Bubble Sort hat eine Komplexität von O(n²), da für jeden der n Durchläufe erneut fast die gesamte Liste durchlaufen wird. Quick Sort und Merge Sort haben dagegen eine Komplexität von O(n log n), da sie die Liste nach dem Divide-and-Conquer-Prinzip bei jedem Rekursionsschritt halbieren. Während der Unterschied bei kleinem n kaum spürbar ist, wächst er bei größerem n stark an – bei n = 100000 benötigt Bubble Sort etwa 6000-mal mehr Grundoperationen als Quick Sort bzw. Merge Sort, was sich auch in den gemessenen Laufzeiten widerspiegelt.
